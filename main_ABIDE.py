@@ -13,7 +13,6 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-
 import time
 import argparse
 
@@ -26,8 +25,11 @@ from sklearn.linear_model import RidgeClassifier
 import sklearn.metrics
 import scipy.io as sio
 
-import ABIDEParser as Reader
-import train_GCN as Train
+from population-gcn import ABIDEParser as Reader
+from population-gcn import train_GCN as Train
+
+# import ABIDEParser as Reader
+# import train_GCN as Train
 
 
 # Prepares the training/test data for each cross validation fold and trains the GCN
